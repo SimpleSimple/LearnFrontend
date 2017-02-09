@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>三列宽度自适应结构</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.header, .footer{
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			text-align: center;
+			color: #FFF;
+			background-color: #AAA
+		}
+		.container{
+			width: auto;
+			background-color: #999999;
+		}
+		.mainBox{
+			float: left;
+			width: 100%;
+			background-color: #FFFFFF;
+		}
+		.mainBox .content{
+			margin: 0 21% 0 41%;
+			background-color: #000000;
+			color: #FFFFFF;
+		}
+		.subMainBox{
+			float: left;
+			width: 40%;
+			margin-left: -100%;
+			background-color: #666666;
+		}
+		.sideBox{
+			float: left;
+			width: 20%;			
+			margin-left: -20%;
+			background-color: #666666;
+		}
+		.footer{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+<div class="header">头部信息</div>
+<div class="mainBox">
+	<div class="content">主要内容区域</div>
+</div>
+<div class="subMainBox">次要内容区域</div>
+<div class="sideBox">侧边栏</div>
+<div class="footer">底部信息</div>
+</body>
+</html>

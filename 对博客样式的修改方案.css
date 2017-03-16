@@ -1,0 +1,12 @@
+body{
+	background:url(https://a-ssl.duitang.com/uploads/item/201604/19/20160419161510_8WKx2.jpeg);
+}
+#blogTitle h1 a{
+	color:3px solid #fd4c5d
+}
+
+#navigator{
+	/*去掉这两个属性*/
+	border-bottom: 
+	border-top:
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript" src="jQueryWheel.js"></script>
+<script type="text/javascript">
+new jQueryWheel(function(){
+	alert("onload completed!");
+})
+
+new jQueryWheel("#header").hover(function(){
+	alert(this);
+})
+</script>
+<body>
+<div id="header"></div>
+</body>
+</html>

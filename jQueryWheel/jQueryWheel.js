@@ -23,6 +23,11 @@ function jQueryWheel(args) {
     }
 }
 
+/**
+ * @param  鼠标移入事件
+ * @param  鼠标移出事件
+ * @description 鼠标移入移出事件
+ */
 jQueryWheel.prototype.hover = function(fnMouseOver, fnMouseOut) {
     if (arguments.length == 2) {
 

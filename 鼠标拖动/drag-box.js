@@ -22,7 +22,7 @@ function drag(id) {
         dragBox.style.cursor = 'pointer';
         disX = oEvent.clientX - dragBox.offsetLeft;
         disY = oEvent.clientY - dragBox.offsetTop;
-
+console.log('disX:'+disX);
         document.onmousemove = function(evt) {
             var oEvent = evt || event;
             dragBox.style.left = oEvent.clientX - disX + 'px';

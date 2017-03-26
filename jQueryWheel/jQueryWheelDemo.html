@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
+    <title></title>
 </head>
 <script type="text/javascript" src="jQueryWheel.js"></script>
 <script type="text/javascript">
-new jQueryWheel(function(){
-	alert("onload completed!");
-})
-
-new jQueryWheel("#header").hover(function(){
-	alert(this);
+new jQueryWheel(function() {
+    alert("load completed!");
 })
 </script>
+
 <body>
-<div id="header"></div>
+    <div id="header">
+        <input type="button" value="test1" id="btn1">
+        <input type="button" value="test2" id="btn2">
+        <input type="button" value="test3" id="btn3">
+    </div>
 </body>
+<script type="text/javascript">
+	new jQueryWheel("#btn1").click(function() {
+        alert('mango, i love eat');
+    })
+</script>
 </html>

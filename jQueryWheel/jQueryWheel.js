@@ -7,6 +7,7 @@ function addEvent(obj, event, fn) {
 }
 
 function jQueryWheel(args) {
+    this.elements = [];
     switch (typeof args) {
         case 'function':
             // window.onload = args;
@@ -15,11 +16,19 @@ function jQueryWheel(args) {
         case 'string':
             switch (args.charAt(0)) {
                 case '#':
+                    this.elements.push(document.getElementById(args.substring(1)));
                     break;
             }
             break;
         default:
             break;
+    }
+}
+
+jQueryWheel.prototype.click = function(fn) {
+	var i=0;
+    for (i = 0; i < this.elements.length; i++) {
+        addEvent(this.elements[i], 'click', fn);
     }
 }
 

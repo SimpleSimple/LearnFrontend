@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div id="topics">
+        <div class="post">
+            <h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/bestfriends/p/6384632.html">学习前端第1天——两列定宽结构</a>
+		</h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                <div id="cnblogs_post_body">
+                    <p>两列定宽结构一般就是一个左侧边(.mainBox)、一个右侧边(.sideBox)。我会把这两个放进一个#container<span style="font-family: 宋体;">的容器里。</span></p>
+                    <p><span style="font-family: 宋体;">接下来</span>HTML<span style="font-family: 宋体;">结构如下：</span></p>
+                    <div class="cnblogs_code">
+                        <div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
+                        <pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="header"</span><span style="color: #0000ff;">&gt;</span>头部信息<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+
+<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="container"</span><span style="color: #0000ff;">&gt;</span>
+
+<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="mainBox"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+
+主要内容区域</span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">br</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;">
+
+主要内容区域</span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">br</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;">
+
+主要内容区域</span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">br</span><span style="color: #0000ff;">/&gt;</span>
+
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+
+<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="sideBox"</span><span style="color: #0000ff;">&gt;</span>次要内容区域<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+
+<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="footer"</span><span style="color: #0000ff;">&gt;</span>底部信息<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+                        <div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
+                    </div>
+                    <p><span style="font-family: 宋体;">现在我们给上</span>CSS<span style="font-family: 宋体;">样式填充，在浏览器进行浏览看下样子</span></p>
+                    <p>CSS<span style="font-family: 宋体;">样式如下：</span></p>
+                    <div class="cnblogs_code">
+                        <div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
+                        <pre><span style="color: #800000;">*</span>{<span style="color: #ff0000;">
+
+margin</span>:<span style="color: #0000ff;"> 0</span>;<span style="color: #ff0000;">
+
+padding</span>:<span style="color: #0000ff;"> 0</span>;
+
+}<span style="color: #800000;">
+
+#header, #footer</span>{<span style="color: #ff0000;">
+
+width</span>:<span style="color: #0000ff;"> 960px</span>;<span style="color: #ff0000;">
+
+height</span>:<span style="color: #0000ff;"> 30px</span>;<span style="color: #ff0000;">
+
+background-color</span>:<span style="color: #0000ff;"> #E8E8E8</span>;
+
+}<span style="color: #800000;">
+
+#container</span>{<span style="color: #ff0000;">
+
+height</span>:<span style="color: #0000ff;"> 250px</span>;<span style="color: #ff0000;">
+
+width</span>:<span style="color: #0000ff;"> 960px</span>;<span style="color: #ff0000;">
+
+margin</span>:<span style="color: #0000ff;"> 10px 0</span>;
+
+}<span style="color: #800000;">
+
+.mainBox</span>{<span style="color: #ff0000;">
+
+height</span>:<span style="color: #0000ff;"> 250px</span>;<span style="color: #ff0000;">
+
+width</span>:<span style="color: #0000ff;"> 680px</span>;<span style="color: #ff0000;">
+
+float</span>:<span style="color: #0000ff;"> left</span>;<span style="color: #ff0000;">
+
+background-color</span>:<span style="color: #0000ff;"> #333333</span>;
+
+}<span style="color: #800000;">
+
+.sideBox</span>{<span style="color: #ff0000;">
+
+height</span>:<span style="color: #0000ff;"> 250px</span>;<span style="color: #ff0000;">
+
+width</span>:<span style="color: #0000ff;"> 270px</span>;<span style="color: #ff0000;">
+
+float</span>:<span style="color: #0000ff;"> right</span>;<span style="color: #ff0000;">
+
+background-color</span>:<span style="color: #0000ff;"> #333333</span>;
+
+}</pre>
+                        <div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
+                    </div>
+                    <p>浏览器浏览如下：</p>
+                    <p>&nbsp;<img src="http://images2015.cnblogs.com/blog/411327/201702/411327-20170209233039588-1150339813.png" alt=""></p>
+                    <p>这里有个问题，当.mainBox<span style="font-family: 宋体;">左侧边随内容高度不断填充的时，内容高度如果高过容器高度，内容会溢出容器。当然我们可以利用</span><span style="font-family: Calibri;">CSS</span><span style="font-family: 宋体;">属性</span><span style="font-family: Calibri;">overflow</span><span style="font-family: 宋体;">解决这个问题，将多余的部分隐藏或设置滚动条。但这里想设置的容器会随着内容的填充高度自增。</span></p>
+                    <p><span style="font-family: 宋体;">想容器的高度随内容高度自增，我们就要先删除</span>#container,.mainBox,.sideBox<span style="font-family: 宋体;">三个的高度，接下来浏览器浏览：</span></p>
+                    <p>&nbsp;<img src="http://images2015.cnblogs.com/blog/411327/201702/411327-20170209233018963-1635471601.png" alt=""></p>
+                    <p>很明显的底部信息位置变了，我们这里要添加清除浮动来设置，接下来CSS<span style="font-family: 宋体;">样式：</span></p>
+                    <div class="cnblogs_code">
+                        <div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
+                        <pre><span style="color: #800000;">*</span>{<span style="color: #ff0000;">
+
+margin</span>:<span style="color: #0000ff;"> 0</span>;<span style="color: #ff0000;">
+
+padding</span>:<span style="color: #0000ff;"> 0</span>;
+
+}<span style="color: #800000;">
+
+#header, #footer</span>{<span style="color: #ff0000;">
+
+width</span>:<span style="color: #0000ff;"> 960px</span>;<span style="color: #ff0000;">
+
+height</span>:<span style="color: #0000ff;"> 30px</span>;<span style="color: #ff0000;">
+
+background-color</span>:<span style="color: #0000ff;"> #E8E8E8</span>;
+
+}<span style="color: #800000;">
+
+#container</span>{
+
+<span style="color: #008000;">/*</span><span style="color: #008000;">height: 250px;</span><span style="color: #008000;">*/</span><span style="color: #ff0000;">
+
+width</span>:<span style="color: #0000ff;"> 960px</span>;<span style="color: #ff0000;">
+
+margin</span>:<span style="color: #0000ff;"> 10px 0</span>;
+
+}<span style="color: #800000;">
+
+.mainBox</span>{
+
+<span style="color: #008000;">/*</span><span style="color: #008000;">height: 250px;</span><span style="color: #008000;">*/</span><span style="color: #ff0000;">
+
+width</span>:<span style="color: #0000ff;"> 680px</span>;<span style="color: #ff0000;">
+
+float</span>:<span style="color: #0000ff;"> left</span>;<span style="color: #ff0000;">
+
+background-color</span>:<span style="color: #0000ff;"> #333333</span>;
+
+}<span style="color: #800000;">
+
+.sideBox</span>{<span style="color: #ff0000;">
+
+height</span>:<span style="color: #0000ff;"> 250px</span>;<span style="color: #ff0000;">
+
+width</span>:<span style="color: #0000ff;"> 270px</span>;<span style="color: #ff0000;">
+
+float</span>:<span style="color: #0000ff;"> right</span>;<span style="color: #ff0000;">
+
+background-color</span>:<span style="color: #0000ff;"> #333333</span>;
+
+}<span style="color: #800000;">
+
+#footer</span>{<span style="color: #ff0000;">
+
+clear</span>:<span style="color: #0000ff;"> both</span>;
+
+}</pre>
+                        <div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
+                    </div>
+                    <p>浏览器浏览：</p>
+                    <p>&nbsp;<img src="http://images2015.cnblogs.com/blog/411327/201702/411327-20170209232950744-1270408241.png" alt=""></p>
+                    <p><span style="font-family: 宋体;">接着我们又看到内容区域</span>(#container)<span style="font-family: 宋体;">与底部信息</span><span style="font-family: Calibri;">(#footer)</span><span style="font-family: 宋体;">很明显的下边距</span><span style="font-family: Calibri;">(margin)</span><span style="font-family: 宋体;">没有了，使用下面</span><span style="font-family: Calibri;">CSS</span><span style="font-family: 宋体;">样式可以进行修改</span><span style="font-family: Calibri;">:</span></p>
+                    <p><span style="text-decoration: line-through;">#footer{</span></p>
+                    <p><span style="text-decoration: line-through;">clear:both;</span></p>
+                    <p><span style="text-decoration: line-through;">} /* <span style="font-family: 宋体;">清除底部信息的左右浮动 </span><span style="font-family: Calibri;">*/</span></span>
+                    </p>
+                    <p>#container:after{</p>
+                    <p>display: block;</p>
+                    <p>clear: both;</p>
+                    <p>content: "";</p>
+                    <p>}</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div id="MySignature"></div>
+                <div class="clear"></div>
+                <div id="blog_post_info_block">
+                    <div id="BlogPostCategory"></div>
+                    <div id="EntryTag"></div>
+                    <div id="blog_post_info">
+                        <div id="green_channel">
+                            <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(6384632,cb_blogId,1);green_channel_success(this,'谢谢推荐！');">好文要顶</a>
+                            <a id="green_channel_follow" onclick="follow('966481c2-58a3-e111-aa3f-842b2b196315');" href="javascript:void(0);">关注我</a>
+                            <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+                            <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="//common.cnblogs.com/images/icon_weibo_24.png" alt=""></a>
+                            <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="//common.cnblogs.com/images/wechat.png" alt=""></a>
+                        </div>
+                        <div id="author_profile">
+                            <div id="author_profile_info" class="author_profile_info">
+                                <a href="http://home.cnblogs.com/u/bestfriends/" target="_blank"><img src="//pic.cnblogs.com/face/u411327.jpg?id=28151337" class="author_avatar" alt=""></a>
+                                <div id="author_profile_detail" class="author_profile_info">
+                                    <a href="http://home.cnblogs.com/u/bestfriends/">11点后要睡觉</a>
+                                    <br>
+                                    <a href="http://home.cnblogs.com/u/bestfriends/followees">关注 - 41</a>
+                                    <br>
+                                    <a href="http://home.cnblogs.com/u/bestfriends/followers">粉丝 - 10</a>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div id="author_profile_honor"></div>
+                            <div id="author_profile_follow">
+                            </div>
+                        </div>
+                        <div id="div_digg">
+                            <div class="diggit" onclick="votePost(6384632,'Digg')">
+                                <span class="diggnum" id="digg_count">0</span>
+                            </div>
+                            <div class="buryit" onclick="votePost(6384632,'Bury')">
+                                <span class="burynum" id="bury_count">0</span>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="diggword" id="digg_tips">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="post_next_prev"><a href="http://www.cnblogs.com/bestfriends/p/6279004.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/bestfriends/p/6279004.html" title="发布于2017-01-12 17:05">Memcache安装、配置与学习</a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="postDesc">posted @ <span id="post-date">2017-02-09 23:31</span> <a href="http://www.cnblogs.com/bestfriends/">11点后要睡觉</a> 阅读(<span id="post_view_count">5</span>) 评论(<span id="post_comment_count">0</span>) <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6384632" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(6384632);return false;">收藏</a></div>
+        </div>
+        <!-- <script type="text/javascript">
+        var allowComments = true,
+            cb_blogId = 118288,
+            cb_entryId = 6384632,
+            cb_blogApp = currentBlogApp,
+            cb_blogUserGuid = '966481c2-58a3-e111-aa3f-842b2b196315',
+            cb_entryCreatedDate = '2017/2/9 23:31:00';
+        loadViewCount(cb_entryId);
+        </script> -->
+        <!-- <script type="text/javascript" src="page-autoscroll.js"></script> -->
+        <script type="text/javascript">
+        (function() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'page-autoscroll.js';
+            // document.body.insertBefore(script);
+            document.body.appendChild(script);
+        })()
+        </script>
+        <!-- Baidu Button BEGIN -->
+        <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;pos=right&amp;uid=6507240"></script>
+        <script type="text/javascript" id="bdshell_js"></script>
+        <script type="text/javascript">
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000);
+        </script>
+        <!-- Baidu Button END -->
+        <!-- Baidu -->
+    </div>
+</body>
+
+</html>

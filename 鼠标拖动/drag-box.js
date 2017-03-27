@@ -35,6 +35,9 @@ function drag(id) {
                 top = 0;
             } else if (top > document.documentElement.clientHeight - dragBox.offsetHeight) {
                 top = document.documentElement.clientHeight - dragBox.offsetHeight;
+            } else if (left < 0 && top < 0) {
+                left = 0;
+                top = 0;
             }
             dragBox.style.left = left + 'px';
             dragBox.style.top = top + 'px';

@@ -17,21 +17,32 @@ function drag(id) {
     dragBox.onmousedown = function(evt) {
         var oEvent = evt || event;
         var disX,
-    		disY; //鼠标与拖动物体的距离
-        dragBox.style.position = 'absolute';
+            disY; //鼠标与拖动物体的距离
+        // dragBox.style.position = 'absolute';
         dragBox.style.cursor = 'pointer';
         disX = oEvent.clientX - dragBox.offsetLeft;
         disY = oEvent.clientY - dragBox.offsetTop;
-console.log('disX:'+disX);
+        console.log('disX:' + disX);
         document.onmousemove = function(evt) {
             var oEvent = evt || event;
-            dragBox.style.left = oEvent.clientX - disX + 'px';
-            dragBox.style.top = oEvent.clientY - disY + 'px';
+            var left = oEvent.clientX - disX;
+            var top = oEvent.clientY - disY;
+            if (left < 0) {
+                left = 0;
+            } else if (left > document.documentElement.clientWidth - dragBox.offsetWidth) {
+                left = document.documentElement.clientWidth - dragBox.offsetWidth;
+            } else if (top < 0) {
+                top = 0;
+            } else if (top > document.documentElement.clientHeight - dragBox.offsetHeight) {
+                top = document.documentElement.clientHeight - dragBox.offsetHeight;
+            }
+            dragBox.style.left = left + 'px';
+            dragBox.style.top = top + 'px';
         }
 
         document.onmouseup = function() {
-            dragBox.onmousedown = null;
             document.onmousemove = null;
+            document.onmouseup = null;
         }
     }
 }
